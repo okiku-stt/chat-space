@@ -6,7 +6,7 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|title|string|null: false|
+|name|string|null: false|
 
 ### Association(group)
 - has_many :users, through: :groups_users
@@ -41,7 +41,7 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|body|string|null: false|
+|body|string||
 |image|string||
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
