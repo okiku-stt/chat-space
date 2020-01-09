@@ -17,7 +17,7 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|name|string|index|
+|name|string|null: false, index: true|
 |email|string|null: false|
 |password|string|null: false|
 
