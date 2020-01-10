@@ -2,21 +2,29 @@
   %div.main_chat__group-info
     %div.main_chat__group-info__current-group
       %div.main_chat__group-info__current-group__group-name
-        shibuya
+        北海道
       %div.main_chat__group-info__current-group__member-list
-        Member : y.k
-    %a{href: '#'}
+        Member : 札幌、函館、室蘭
+    %a{href: '#henshu'}
       %div.main_chat__group-info__edit-box
         Edit
   %div.main_chat__message-view
     %div.main_chat__message-view__box
       %div.main_chat__message-view__box__info
         %div.main_chat__message-view__box__info__name-posted
-          y.k
+          行き方
         %div.main_chat__message-view__box__info__post-date
-          2020/01/10(Fri) 16:51:23
+          2020/1/8
       %div.main_chat__message-view__box__message-content
-        aaaaa
+        飛行機、新幹線
+    %div.main_chat__message-view__box
+      %div.main_chat__message-view__box__info
+        %div.main_chat__message-view__box__info__name-posted
+          食べるもの
+        %div.main_chat__message-view__box__info__post-date
+          2020/1/9
+      %div.main_chat__message-view__box__message-content
+        かに、いくら、ホタテ
   %div.main_chat__new-message
     %form.main_chat__new-message__form
       %div.main_chat__new-message__form__box
@@ -27,7 +35,9 @@
           %div.main_chat__new-message__form__box__image--default
             %input{type: "file"}
       %label
-        %div.main_chat__new-message__form__send
-          Send
-        %div.main_chat__new-message__form__box__send--default
-          %input{type: "submit"}
+        %a{href: '#soushin'}
+          %div.main_chat__new-message__form__send
+            Send
+          %div.main_chat__new-message__form__box__send--default
+            %input{type: "submit"}
+          
