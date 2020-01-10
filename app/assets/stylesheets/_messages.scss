@@ -3,13 +3,33 @@
 }
 
 .side_bar {
-  background-color: #253141;
   width: 300px;
-  height: 100vh;
+  float: left;
+  .side_bar__user-name {
+    background-color: #253141;
+    height: 100px;
+  }
+  .side_bar__group-list {
+    background-color: green;
+    height: calc(100vh - 100px);
+  }
 }
 
 .main_chat {
   width: calc( 100vw - 300px );
-  background-color: #ffffff;
   height: 100vh;
+  float: right;
+  .main_chat__group-info{
+    height: 100px;
+    background-color: red;
+    border-bottom: 10px solid purple;
+  }
+  .main_chat__message-content{
+    height: calc( 100vh - 190px );
+    background-color: blue;
+  }
+  .main_chat__message-form{
+    height: 90px;
+    background-color: yellow;
+  }
 }
