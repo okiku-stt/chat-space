@@ -5,12 +5,40 @@
 .side_bar {
   width: 300px;
   float: left;
-  .side_bar__user-name {
-    background-color: #253141;
+  .side_bar__user-info {
+    background-color: rgb(137, 255, 255);
     height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .side_bar__user-info__box{
+      background-color: rgb(73, 214, 172);
+      width: 260px;
+      height: 20px;
+      display: flex;
+      justify-content: space-between;
+      .side_bar__user-info__box__user-name {
+        background-color: tan;
+        font-size: 14px;
+      }
+      .side_bar__user-info__box__menu {
+        background-color: chocolate;
+        width: 60px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        .side_bar__user-info__box__menu_new {
+          color :white ;
+        }
+        .side_bar__user-info__box__menu_setting {
+          color :white ;
+          margin-left: 5px;
+        }
+      }
+    }
   }
   .side_bar__group-list {
-    background-color: green;
+    background-color: rgb(122, 252, 140);
     height: calc(100vh - 100px);
   }
 }
@@ -21,15 +49,15 @@
   float: right;
   .main_chat__group-info{
     height: 100px;
-    background-color: red;
-    border-bottom: 10px solid purple;
+    background-color: rgb(245, 122, 122);
+    border-bottom: 10px solid rgb(208, 124, 247);
   }
   .main_chat__message-content{
     height: calc( 100vh - 190px );
-    background-color: blue;
+    background-color: rgb(100, 134, 247);
   }
   .main_chat__message-form{
     height: 90px;
-    background-color: yellow;
+    background-color: rgb(250, 247, 85);
   }
 }
