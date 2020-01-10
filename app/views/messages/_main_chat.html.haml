@@ -8,5 +8,26 @@
     %a{href: '#'}
       %div.main_chat__group-info__edit-box
         Edit
-  %div.main_chat__message-content
-  %div.main_chat__message-form
+  %div.main_chat__message-view
+    %div.main_chat__message-view__box
+      %div.main_chat__message-view__box__info
+        %div.main_chat__message-view__box__info__name-posted
+          y.k
+        %div.main_chat__message-view__box__info__post-date
+          2020/01/10(Fri) 16:51:23
+      %div.main_chat__message-view__box__message-content
+        aaaaa
+  %div.main_chat__new-message
+    %form.main_chat__new-message__form
+      %div.main_chat__new-message__form__box
+        %input.main_chat__new-message__form__box__text{type: "text", placeholder: "type a message"}
+        %label
+          %div.main_chat__new-message__form__box__image
+            %i.far.fa-image.fa-lg
+          %div.main_chat__new-message__form__box__image--default
+            %input{type: "file"}
+      %label
+        %div.main_chat__new-message__form__send
+          Send
+        %div.main_chat__new-message__form__box__send--default
+          %input{type: "submit"}

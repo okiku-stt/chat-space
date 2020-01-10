@@ -78,8 +78,8 @@
         font-size: 12px;
         color: #999999;
       }
-
     }
+
     a {
       text-decoration: none;
     
@@ -95,12 +95,77 @@
       }
     }
   }
-  .main_chat__message-content{
+  .main_chat__message-view{
     height: calc( 100vh - 190px );
     background-color: #fafafa;
+    padding-left: 40px;
+    .main_chat__message-view__box{
+      padding: 46px 0;
+      .main_chat__message-view__box__info{
+        display: flex;
+        margin-bottom: 10px;
+      .main_chat__message-view__box__info__name-posted{
+        vertical-align: middle;
+        font-size: 16px;
+        color: #333333;
+        font-weight: bold;
+      }
+      .main_chat__message-view__box__info__post-date{
+        color: #999999;
+        font-size: 12px;
+        margin-left: 10px;
+      }
+      }
+      .main_chat__message-view__box__message-content{
+        color: #434A54;
+        font-size: 14px;
+      }
+    }
   }
-  .main_chat__message-form{
+  .main_chat__new-message{
     height: 90px;
     background-color: #d2d2d2;
+    padding: 20px 40px;
+    .main_chat__new-message__form {
+      display: flex;
+      .main_chat__new-message__form__box {
+        display: flex;
+        background-color: #ffffff;
+        width : 100%;
+        height: 50px;
+        align-items: center;
+        position: relative;
+
+        label{
+          right: 10px;
+          position: absolute;
+        }
+        .main_chat__new-message__form__box__text {
+          height: 50px;
+          width: 100%;
+          background-color: #ffffff;
+          border-style: none;
+          padding: 0 40px 0 10px;
+        }
+        .main_chat__new-message__form__box__image {
+          
+        }
+        .main_chat__new-message__form__box__image--default {
+          display: none;
+        }
+      }
+      .main_chat__new-message__form__send {
+        height: 50px;
+        width: 100px;
+        background-color: #38aef0;
+        text-align: center;
+        line-height: 50px;
+        color: #ffffff;
+        margin-left: 15px;
+      }
+      .main_chat__new-message__form__box__send--default{
+        display: none;
+      }
+    }
   }
 }
