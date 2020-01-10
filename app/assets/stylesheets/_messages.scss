@@ -6,56 +6,53 @@
   width: 300px;
   float: left;
   .side_bar__user-info {
-    background-color: rgb(137, 255, 255);
+    background-color: #253141;
     height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
     .side_bar__user-info__box{
-      background-color: rgb(73, 214, 172);
       width: 260px;
       height: 20px;
       display: flex;
       justify-content: space-between;
       .side_bar__user-info__box__user-name {
-        background-color: tan;
         font-size: 16px;
-        color: white;
+        color: #ffffff;
         text-align: center;
         font-weight: bold;
       }
       .side_bar__user-info__box__menu {
-        background-color: chocolate;
         width: 60px;
         display: flex;
         justify-content: flex-end;
         align-items: center;
+        color: #ffffff;
         .side_bar__user-info__box__menu__new {
-          color :white ;
+          color : #ffffff ;
         }
         .side_bar__user-info__box__menu__setting {
-          color :white ;
           margin-left: 5px;
+          color: #ffffff;
         }
       }
     }
   }
   .side_bar__groups {
-    background-color: rgb(122, 252, 140);
+    background-color: #2f3e51;
     height: calc(100vh - 100px);
     padding: 20px 20px 0 20px;
     .side_bar__groups__group-box{
-    background-color: yellowgreen;
     margin-bottom: 40px ;
       .side_bar__groups__group-box__group-info {
         margin-bottom: 5px;
         font-size: 15px;
-        color: white;
+        color: #ffffff;
 
       }
       .side_bar__groups__group-box__latest-message {
         font-size: 11px;
-        color: white;
+        color: #ffffff;
       }
     }
   }
@@ -67,15 +64,43 @@
   float: right;
   .main_chat__group-info{
     height: 100px;
-    background-color: rgb(245, 122, 122);
-    border-bottom: 10px solid rgb(208, 124, 247);
+    background-color: #ffffff;
+    border-bottom: 1px solid #eeeeee;
+    display: flex;
+    justify-content: space-between;
+    padding: 0  40px;
+    .main_chat__group-info__current-group{
+      .main_chat__group-info__current-group__group-name{
+        margin: 35px 0 15px ;
+        font-size: 20px;
+      }
+      .main_chat__group-info__current-group__member-list{
+        font-size: 12px;
+        color: #999999;
+      }
+
+    }
+    a {
+      text-decoration: none;
+    
+    .main_chat__group-info__edit-box{
+      padding: 0 20px;
+      font-size: 16px;
+      margin-top: 28px;
+      width: 72px;
+      border: solid 1px  #38aef0;
+      height: 40px;
+      line-height: 40px;
+      color: #38aef0;
+      }
+    }
   }
   .main_chat__message-content{
     height: calc( 100vh - 190px );
-    background-color: rgb(100, 134, 247);
+    background-color: #fafafa;
   }
   .main_chat__message-form{
     height: 90px;
-    background-color: rgb(250, 247, 85);
+    background-color: #d2d2d2;
   }
 }
