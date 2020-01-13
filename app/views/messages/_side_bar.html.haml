@@ -2,11 +2,11 @@
   .side_bar__user-info
     .side_bar__user-info__box
       .side_bar__user-info__box__user-name
-        ユーザー名
+        = current_user.name
       .side_bar__user-info__box__menu
         = link_to "#newgroup" do
           %i.fas.fa-edit.fa-sm.side_bar__user-info__box__menu__new
-        = link_to "#setting" do
+        = link_to edit_user_path(current_user) do
           %i.fas.fa-cog.fa-sm.side_bar__user-info__box__menu__setting
   .side_bar__groups
     .side_bar__groups__group-box
