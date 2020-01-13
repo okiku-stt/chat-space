@@ -1,44 +1,43 @@
-%div.main_chat
-  %div.main_chat__group-info
-    %div.main_chat__group-info__current-group
-      %div.main_chat__group-info__current-group__group-name
+.main_chat
+  .main_chat__group-info
+    .main_chat__group-info__current-group
+      .main_chat__group-info__current-group__group-name
         グループ名
-      %div.main_chat__group-info__current-group__member-list
+      .main_chat__group-info__current-group__member-list
         Member : a,b,c
-    %div.main_chat__group-info__edit
-      %a{href: '#henshu'}
-        %div.main_chat__group-info__edit__box
+    .main_chat__group-info__edit
+      = link_to "#edit" do
+        .main_chat__group-info__edit__box
           Edit
-  %div.main_chat__message-view
-    %div.main_chat__message-view__box
-      %div.main_chat__message-view__box__info
-        %div.main_chat__message-view__box__info__name-posted
+  .main_chat__message-view
+    .main_chat__message-view__box
+      .main_chat__message-view__box__info
+        .main_chat__message-view__box__info__name-posted
           a
-        %div.main_chat__message-view__box__info__post-date
+        .main_chat__message-view__box__info__post-date
           2020/1/8
-      %div.main_chat__message-view__box__message-content
+      .main_chat__message-view__box__message-content
         メッセージ内容 A
-    %div.main_chat__message-view__box
-      %div.main_chat__message-view__box__info
-        %div.main_chat__message-view__box__info__name-posted
+    .main_chat__message-view__box
+      .main_chat__message-view__box__info
+        .main_chat__message-view__box__info__name-posted
           b
-        %div.main_chat__message-view__box__info__post-date
+        .main_chat__message-view__box__info__post-date
           2020/1/9
-      %div.main_chat__message-view__box__message-content
+      .main_chat__message-view__box__message-content
         メッセージ内容 B
-  %div.main_chat__new-message
+  .main_chat__new-message
     %form.main_chat__new-message__form
-      %div.main_chat__new-message__form__box
+      .main_chat__new-message__form__box
         %input.main_chat__new-message__form__box__text{type: "text", placeholder: "type a message"}
         %label
-          %div.main_chat__new-message__form__box__image
+          .main_chat__new-message__form__box__image
             %i.far.fa-image.fa-lg
-          %div.main_chat__new-message__form__box__image--default
+          .main_chat__new-message__form__box__image--default
             %input{type: "file"}
       %label
-        %a{href: '#soushin'}
-          %div.main_chat__new-message__form__send
+        = link_to "#send" do
+          .main_chat__new-message__form__send
             Send
-          %div.main_chat__new-message__form__box__send--default
+          .main_chat__new-message__form__send--default
             %input{type: "submit"}
-          
