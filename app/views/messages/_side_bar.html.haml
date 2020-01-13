@@ -1,0 +1,26 @@
+.side_bar
+  .side_bar__user-info
+    .side_bar__user-info__box
+      .side_bar__user-info__box__user-name
+        ユーザー名
+      .side_bar__user-info__box__menu
+        = link_to "#newgroup" do
+          %i.fas.fa-edit.fa-sm.side_bar__user-info__box__menu__new
+        = link_to "#setting" do
+          %i.fas.fa-cog.fa-sm.side_bar__user-info__box__menu__setting
+  .side_bar__groups
+    .side_bar__groups__group-box
+      .side_bar__groups__group-box__group-info
+        グループ A
+      .side_bar__groups__group-box__latest-message
+        message A
+    .side_bar__groups__group-box
+      .side_bar__groups__group-box__group-info
+        グループ B
+      .side_bar__groups__group-box__latest-message
+        message B
+    .side_bar__groups__group-box
+      .side_bar__groups__group-box__group-info
+        グループ C
+      .side_bar__groups__group-box__latest-message
+        message C

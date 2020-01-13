@@ -1,0 +1,43 @@
+.main_chat
+  .main_chat__group-info
+    .main_chat__group-info__current-group
+      .main_chat__group-info__current-group__group-name
+        グループ名
+      .main_chat__group-info__current-group__member-list
+        Member : a,b,c
+    .main_chat__group-info__edit
+      = link_to "#edit" do
+        .main_chat__group-info__edit__box
+          Edit
+  .main_chat__message-view
+    .main_chat__message-view__box
+      .main_chat__message-view__box__info
+        .main_chat__message-view__box__info__name-posted
+          a
+        .main_chat__message-view__box__info__post-date
+          2020/1/8
+      .main_chat__message-view__box__message-content
+        メッセージ内容 A
+    .main_chat__message-view__box
+      .main_chat__message-view__box__info
+        .main_chat__message-view__box__info__name-posted
+          b
+        .main_chat__message-view__box__info__post-date
+          2020/1/9
+      .main_chat__message-view__box__message-content
+        メッセージ内容 B
+  .main_chat__new-message
+    %form.main_chat__new-message__form
+      .main_chat__new-message__form__box
+        %input.main_chat__new-message__form__box__text{type: "text", placeholder: "type a message"}
+        %label
+          .main_chat__new-message__form__box__image
+            %i.far.fa-image.fa-lg
+          .main_chat__new-message__form__box__image--default
+            %input{type: "file"}
+      %label
+        = link_to "#send" do
+          .main_chat__new-message__form__send
+            Send
+          .main_chat__new-message__form__send--default
+            %input{type: "submit"}
