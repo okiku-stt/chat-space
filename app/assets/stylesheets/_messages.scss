@@ -6,56 +6,56 @@
   width: 300px;
   float: left;
 
-  .side_bar__user-info {
+  &__user-info {
     height: 100px;
     background-color: #253141;
     display: flex;
     justify-content: center;
     align-items: center;
 
-    .side_bar__user-info__box {
+    &__box {
       height: 20px;
       width: 260px;
       display: flex;
       justify-content: space-between;
 
-      .side_bar__user-info__box__user-name {
+      &__user-name {
         font-size: 16px;
         color: #ffffff;
         font-weight: bold;
       }
-      .side_bar__user-info__box__menu {
+      &__menu {
         width: 60px;
         display: flex;
         justify-content: flex-end;
         align-items: center;
         color: #ffffff;
 
-        .side_bar__user-info__box__menu__new {
+        &__new {
           color : #ffffff ;
         }
 
-        .side_bar__user-info__box__menu__setting {
+        &__setting {
           margin-left: 5px;
           color: #ffffff;
         }
       }
     }
   }
-  .side_bar__groups {
+  &__groups {
     height: calc(100vh - 100px);
     background-color: #2f3e51;
     padding: 20px 20px 0 20px;
 
-    .side_bar__groups__group-box {
+    &__group-box {
     margin-bottom: 40px ;
 
-      .side_bar__groups__group-box__group-info {
+      &__group-info {
         margin-bottom: 5px;
         font-size: 15px;
         color: #ffffff;
       }
-      .side_bar__groups__group-box__latest-message {
+      &__latest-message {
         font-size: 11px;
         color: #ffffff;
       }
@@ -68,7 +68,7 @@
   height: 100vh;
   float: right;
 
-  .main_chat__group-info {
+  &__group-info {
     height: 100px;
     background-color: #ffffff;
     border-bottom: 1px solid #eeeeee;
@@ -76,18 +76,19 @@
     justify-content: space-between;
     padding: 0  40px;
     
-    .main_chat__group-info__current-group__group-name {
+    &__current-group__group-name {
       margin: 35px 0 15px ;
       font-size: 20px;
     }
-    .main_chat__group-info__current-group__member-list {
+    &__current-group__member-list {
       font-size: 12px;
       color: #999999;
     }
-    a {
+    &__edit {
+      a {
       text-decoration: none;
-
-    .main_chat__group-info__edit-box {
+      }
+    &__box {
       height: 40px;
       width: 72px;
       padding: 0 20px;
@@ -99,45 +100,45 @@
       }
     }
   }
-  .main_chat__message-view {
+  &__message-view {
     height: calc( 100vh - 190px );
     background-color: #fafafa;
     padding-left: 40px;
 
-    .main_chat__message-view__box {
+    &__box {
       padding: 46px 0;
 
-      .main_chat__message-view__box__info {
+      &__info {
         display: flex;
         margin-bottom: 10px;
 
-        .main_chat__message-view__box__info__name-posted {
+        &__name-posted {
           vertical-align: middle;
           font-size: 16px;
           color: #333333;
           font-weight: bold;
         }
-        .main_chat__message-view__box__info__post-date {
+        &__post-date {
           color: #999999;
           font-size: 12px;
           margin-left: 10px;
         }
       }
-      .main_chat__message-view__box__message-content {
+      &__message-content {
         color: #434A54;
         font-size: 14px;
       }
     }
   }
-  .main_chat__new-message {
+  &__new-message {
     height: 90px;
     background-color: #d2d2d2;
     padding: 20px 40px;
 
-    .main_chat__new-message__form {
+    &__form {
       display: flex;
 
-      .main_chat__new-message__form__box {
+      &__box {
         display: flex;
         background-color: #ffffff;
         width : 100%;
@@ -149,18 +150,18 @@
           right: 10px;
           position: absolute;
         }
-        .main_chat__new-message__form__box__text {
+        &__text {
           height: 50px;
           width: 100%;
           background-color: #ffffff;
           border-style: none;
           padding: 0 40px 0 10px;
         }
-        .main_chat__new-message__form__box__image--default {
+        &__image--default {
           display: none;
         }
       }
-      .main_chat__new-message__form__send {
+      &__send {
         height: 50px;
         width: 100px;
         background-color: #38aef0;
@@ -169,7 +170,7 @@
         color: #ffffff;
         margin-left: 15px;
       }
-      .main_chat__new-message__form__box__send--default {
+      &__send--default {
         display: none;
       }
       a {
