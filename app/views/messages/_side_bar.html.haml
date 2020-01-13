@@ -4,23 +4,15 @@
       .side_bar__user-info__box__user-name
         = current_user.name
       .side_bar__user-info__box__menu
-        = link_to "#newgroup" do
+        = link_to new_group_path do
           %i.fas.fa-edit.fa-sm.side_bar__user-info__box__menu__new
         = link_to edit_user_path(current_user) do
           %i.fas.fa-cog.fa-sm.side_bar__user-info__box__menu__setting
   .side_bar__groups
-    .side_bar__groups__group-box
-      .side_bar__groups__group-box__group-info
-        グループ A
-      .side_bar__groups__group-box__latest-message
-        message A
-    .side_bar__groups__group-box
-      .side_bar__groups__group-box__group-info
-        グループ B
-      .side_bar__groups__group-box__latest-message
-        message B
-    .side_bar__groups__group-box
-      .side_bar__groups__group-box__group-info
-        グループ C
-      .side_bar__groups__group-box__latest-message
-        message C
+    - current_user.groups.each do |group|
+      .side_bar__groups__group-box
+        = link_to messages_path do
+          .side_bar__groups__group-box__group-info
+            = group.name
+          .side_bar__groups__group-box__latest-message
+            メッセージはまだありません。
