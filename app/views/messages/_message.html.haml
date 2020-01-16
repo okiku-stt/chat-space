@@ -4,7 +4,7 @@
       = message.user.name
     .main_chat__message-view__box__info__post-date
       = message.created_at.strftime("%Y年%m月%d日 %H時%M分")
-  .main_chat__message-view__box__message-content
+  .main_chat__message-view__box__message
     - if message.content.present?
       .main_chat__message-view__box__message__content
         = message.content
