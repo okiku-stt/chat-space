@@ -1,29 +1,4 @@
 $(function(){
-  var reloadMessages = function() {
-    last_message_id = $('.message:last').data("message-id");
-    $.ajax({
-      url: "api/messages",
-      type: 'get',
-      dataType: 'json',
-      data: {id: last_message_id}
-    })
-    .done(function(messages) {
-      if (messages.length !== 0) {
-      var insertHTML = '';
-      $.each(messages, function(i, message) {
-        insertHTML += buildHTML(message)
-      });
-      $('.main_chat__message-view').append(insertHTML);
-      $('.main_chat__message-view').animate({ scrollTop: $('.main_chat__message-view')[0].scrollHeight});
-      $("#new_message")[0].reset();
-      $(".main_chat__new-message__form__send").prop("disabled", false);
-    }
-    })
-    .fail(function() {
-      alert('自動更新が正常に行われませんでした。');
-    });
-  };
-
   var buildHTML  = function(message) {
     if ( message.content && message.image ) {
       var html =
@@ -79,6 +54,32 @@ $(function(){
     }
     return html;
     };
+
+  var reloadMessages = function() {
+    last_message_id = $('.message:last').data("message-id");
+    $.ajax({
+      url: "api/messages",
+      type: 'get',
+      dataType: 'json',
+      data: {id: last_message_id}
+    })
+    .done(function(messages) {
+      if (messages.length !== 0) {
+        var insertHTML = '';
+        $.each(messages, function(i, message) {
+          insertHTML += buildHTML(message)
+       });
+        $('.main_chat__message-view').append(insertHTML);
+        $('.main_chat__message-view').animate({ scrollTop: $('.main_chat__message-view')[0].scrollHeight});
+        $("#new_message")[0].reset();
+        $(".main_chat__new-message__form__send").prop("disabled", false);
+      }
+    })
+    .fail(function() {
+      alert('自動更新が正常に行われませんでした。');
+    });
+  };
+
   $('#new_message').on('submit', function(e){
     e.preventDefault()
     var formData = new FormData(this);
